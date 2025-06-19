@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+
+}
+
+html , body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey-900);
+    display: grid;
+    place-items: center;
+    
+}
+
+/* =====  card section starts here =====  */
+
+.card {
+    background-color: var(--Grey-800);
+    width: 500px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+/* == card upper ==  */
+.card-upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-upper img {
+    width: 10rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-upper h1 {
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-upper p {
+    color: var(--Green);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* === card lower ===  */
+
+.card-lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-lower p {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--White);
+    text-align: center;
+    
+}
+
+/* == btn section ==  */
+
+.btn {
+    
+    background-color: var(--Grey-700);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align:center;
+    font-weight: 600;
+    cursor: pointer;
+     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--Grey-600); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* == attribution ==  */
+.attribution {
+    color: white;
+}
+.attribution a {
+    color: var(--Green);
+}
+
+    /* === Responsive for mobile designed === */
+
+ @media (max-width: 768px) {
+
+    .card {           
+        width: 350px; 
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        height: auto;
+    }
+
+ /* == card upper ==  */
+
+    .card-upper {          
+        gap: 1rem;
+    }
+
+    .card-upper img {
+        width: 7rem;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .card-upper h1 {
+        font-size: 1.4rem;            
+    }
+
+    .card-upper p {
+        font-size: .8rem;                  
+    }
+
+    /* == card lower ==  */
+        .card-lower {
+            gap: 1.5rem; 
+         }   
+    }
+
+    /* ========= Thanks For Visiting My Code 
+                 Don't forget to give Love ========= */
